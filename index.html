@@ -7,14 +7,22 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel='stylesheet' href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
   <script src="./app.js" defer></script>
 </head>
 <body>
-
+  <div class="logo">
+  </div>
+  <picture>
+    <source media="(max-width: 375px)" srcset="./images/hero-mobile.jpg">
+    <img src="./images/hero-desktop.jpg" alt="Model">
+  </picture>
   <main>
-    <h1>We're coming soon</h1>
+    <h1 class="header dark-gray-red"><span class="light-300 desaturated-red">WE'RE</span> COMING SOON</h1>
 
     <p>
       Hello fellow shoppers! We're currently building our new fashion store. 
@@ -23,10 +31,8 @@
 
     <form>
       <span class="sr-only">Enter email address:</span>
-      <div class="input-email">
-        <input type="email" placeholder="Email Address">
-        <button type="submit"></button>
-      </div>
+      <input type="email" placeholder="Email Address">
+      <button type="submit"></button>
     </form>
   </main>
   
