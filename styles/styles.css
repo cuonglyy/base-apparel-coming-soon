@@ -36,7 +36,7 @@ body {
     background-size: 63% 100%;
     font-family: 'Josefin Sans', sans-serif;
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1.7fr minmax(61rem, 1fr);
     grid-template-rows: 96px 1fr;
     grid-template-areas:
     "logo hero"
@@ -46,14 +46,18 @@ body {
 }
 
 #logo {
+    grid-area: logo;
     padding: 6.6rem 0 0 16.5rem;
 }
 
 #hero {
+    grid-area: hero;
+    background-image: url('../images/hero-desktop.jpg');
     background-size: cover;
 }
 
 #main {
+    grid-area: main;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -65,8 +69,13 @@ body {
 */
 .header {
     text-transform: uppercase;
+    color: black;
+    font-size: 6.4rem;
 }
 
+.header--alt {
+    color: var(--primary-desaturated-red);
+}
 
 
 /*
