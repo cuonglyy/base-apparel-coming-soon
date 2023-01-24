@@ -86,6 +86,16 @@ body {
     line-height: 2.8rem;
 }
 
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--primary-desaturated-red);
+    border-radius: 2.8rem;
+    padding: 1.3rem;
+    width: 44.5rem;
+    
+}
+
 
 /*
     FOOTER
