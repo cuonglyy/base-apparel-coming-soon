@@ -191,6 +191,26 @@ footer {
 /*
     MEDIUM SIZED SCREEN
 */
-@media screen and (max-width: 1375px) {
+@media screen and (max-width: 1000px) {
+    .container {
+        min-height: auto;
+        grid-template-rows: 144px 1fr 1fr;
+        grid-template-areas:
+        'logo'
+        'hero'
+        'main'
+    }
 
+    #logo {
+        padding: 0;
+        margin: 3.2rem;
+    }
+
+    #hero {
+        background-image: url('../images/hero-mobile.jpg');
+    }
+
+    #background {
+        background-image: none;
+    }
 }
