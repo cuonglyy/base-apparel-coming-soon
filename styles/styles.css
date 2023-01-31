@@ -142,8 +142,12 @@ input[type="email"]:focus {
     font-size: 13px;
 }
 
-.icon-error {
+.error-icon {
     opacity: 0;
+}
+
+.error {
+    border: 2px solid red;
 }
 
 /*
