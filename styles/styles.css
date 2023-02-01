@@ -193,6 +193,10 @@ footer {
     MEDIUM SIZED SCREEN
 */
 @media screen and (max-width: 1000px) {
+    body {
+        background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
+
     .container {
         grid-template-rows: auto 1fr 1.5fr;
         grid-template-columns: auto;
@@ -209,8 +213,7 @@ footer {
 
     #hero {
         background-image: url('../images/hero-mobile.jpg');
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     #background {
@@ -218,9 +221,10 @@ footer {
     }
 
     #main {
-        max-width: 30rem;
+        max-width: 31.1rem;
         padding: 0;
         margin: auto;
+        margin-top: 6.4rem;
     }
 
     .main__header {
@@ -236,17 +240,24 @@ footer {
     }
 
     .sign-up {
-        width: auto;
+        width: 30.5rem;
         margin-top: 2rem;
     }
 
+    input[type="email"] {
+        padding: 1.4rem;
+        width: 17.5rem;
+    }
+
     .sign-up__btn--submit {
-        left: 22rem;
-        padding: 1.2rem 2.5rem;
+        left: 25rem;
+        top: -1.5px;
+        padding: 1.41rem 2.6rem;
         display: inline-flex;
     }
 
     footer {
+        position: relative;
         bottom: 0;
     }
 }
